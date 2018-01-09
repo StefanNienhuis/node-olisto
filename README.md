@@ -1,7 +1,7 @@
 node-olisto
 ==============================
 
-![node-olisto: Downloads](https://img.shields.io/npm/dt/node-olisto.svg?style=flat) ![node-olisto: Version](https://img.shields.io/npm/v/node-olisto.svg)
+![olisto: Downloads](https://img.shields.io/npm/dt/olisto.svg?style=flat) ![olisto: Version](https://img.shields.io/npm/v/olisto.svg)
 
 Use Olisto Connect in your Javascript projects!
 
