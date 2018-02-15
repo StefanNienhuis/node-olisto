@@ -1,6 +1,6 @@
 {
   "name": "olisto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Use Olisto Connect in your Javascript projects!",
   "main": "index.js",
   "scripts": {

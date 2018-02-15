@@ -4,8 +4,14 @@ class Olisto {
 
   constructor(connectURL) {
     this.connectURL = connectURL
-    if (!this.connectURL.startsWith("https://connect.olisto.com/c/")) {
-      throw new Error('Invalid connect URL make sure it starts with "https://"!')
+
+    if (this.connectURL.startsWith("https://connect.olisto.com/c/")) {
+      // Because "connect.olisto.com" doesn't seem to work with https, we need to replace it with http
+      this.connectURL = this.connectURL.replace("https://", "http://")
+    }
+
+    if (!this.connectURL.startsWith("http://connect.olisto.com/c/") && !this.connectURL.startsWith("http://connect.triggi.com/c/") && !this.connectURL.startsWith("https://connect.triggi.com/c/")) {
+      throw new Error('Invalid connect URL!')
     }
   }
 
